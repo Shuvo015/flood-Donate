@@ -3,9 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Donation For Flood</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h2> I am Here</h2>
+<body class="">
+  <nav id="navbar" class=" sticky top-0  backdrop-blur-md ">
+      <div class="bg-[#F9F7F3] py-10">
+        <div class="container mx-auto ">
+          <div class="flex flex-col sm:flex-row sm:justify-between items-center  gap-4">
+            
+              <div class="bg-[#B4F461] w-24 text-center font-bold py-3 ">
+                <a href="blog.html">Blog</a>
+              </div>
+              
+              <div class="flex items-center  gap-x-3">
+                <img src="assets/logo.png"/>
+                <h3 class="text-2xl">Donate Bangladesh</h3>
+              
+              </div>
+            
+            <div class="flex items-center gap-x-3">
+              <img src="assets/coin.png"/>
+              <span id="balance" class="md:text-2xl">5000</span>
+              <p class="md:text-2xl">BDT</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center gap-5 mt-5">
+      <button id="donation-btn" class=" py-5 px-8 rounded bg-[#B4F461]">Donation</button>
+      <button id="history-btn" class=" py-5 px-8 rounded">History</button>
+    </div>
+  </nav>
+
+  <main id="donate-main" class="mt-5 mb-10">
+    <div  class="sm:flex justify-evenly container m-auto  gap-10 border border-gray-300 p-7 rounded-xl">
+      <div>
+        <img src="assets/noakhali.png"/>
+      </div>
+      <div>
+        <div class="flex items-center gap-x-3 bg-slate-100 w-40">
+          <img src="assets/coin.png"/>
+          <!-- <h3 class="md:text-2xl">5000</h3> -->
+          <span id="span1-input" class="md:text-2xl">5000</span>
+          <p class="md:text-2xl">BDT</p>
+        </div>
+        <div>
+          <p id="noakhali" class="text-xl font-bold py-5">Donate for Flood at Noakhali, Bangladesh</p>
+          
+          <p class="text-sm text-gray-400 ">The recent floods in Noakhali have caused significant damage to <br class="hidden lg:block">homes  infrastructure. Your donation will help provide essential <br class="hidden lg:block"> supplies and  to those affected by this disaster. Every contribution, <br class="hidden lg:block">big or small, makes  difference. Please join us in supporting the relief <br class="hidden lg:block"> efforts and making a positive impact on the lives of those in need.
+          </p>
+          <input id="input-amount-1" class=" w-[300px] sm:w-[400px] border border-gray-300 p-2 my-5" type="text" placeholder="Write Donation Amount ">
+          <br>
+          <button id="donate1-btn" class="btn mt-5 w-[300px] sm:w-[400px] text-xl hover:bg-[#B4F461]">Donation</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sm:flex justify-evenly container m-auto mt-5 gap-10 border border-gray-300 p-7 rounded-xl">
+      <div>
+        <img src="assets/feni.png"/>
+      </div>
+      <div>
+        <div class="flex items-center gap-x-3 bg-slate-100 w-40">
+          <img src="assets/coin.png"/>
+          <span id="span2-input" class="md:text-2xl">5000</span>
+          <p class="md:text-2xl">BDT</p>
+        </div>
+        <div>
+          <p class="text-xl font-bold py-5">Donate for Flood at Noakhali, Bangladesh</p>
+          
+          <p class="text-sm text-gray-400 ">The recent floods in Noakhali have caused significant damage to <br class="hidden lg:block">homes  infrastructure. Your donation will help provide essential <br class="hidden lg:block"> supplies and  to those affected by this disaster. Every contribution, <br class="hidden lg:block">big or small, makes  difference. Please join us in supporting the relief <br class="hidden lg:block"> efforts and making a positive impact on the lives of those in need.
+          </p>
+          <input id="input-amount-2" class=" w-[300px] sm:w-[400px] border border-gray-300 p-2 my-5" type="text" placeholder="Write Donation Amount ">
+          <br>
+          <button id="donate2-btn" class="btn mt-5 w-[300px] sm:w-[400px] text-xl hover:bg-[#B4F461]">Donation</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sm:flex justify-evenly container m-auto mt-5 gap-10 border border-gray-300 p-7 rounded-xl">
+      <div>
+        <img src="assets/quota-protest.png"/>
+      </div>
+      <div>
+        <div class="flex items-center gap-x-3 bg-slate-100 w-40">
+          <img src="assets/coin.png"/>
+          <h3  id='span3-input'class="md:text-2xl">5000</h3>
+          <p class="md:text-2xl">BDT</p>
+        </div>
+        <div>
+          <p class="text-xl font-bold py-5">Donate for Flood at Noakhali, Bangladesh</p>
+          
+          <p class="text-sm text-gray-400 ">The recent floods in Noakhali have caused significant damage to <br class="hidden lg:block">homes  infrastructure. Your donation will help provide essential <br class="hidden lg:block"> supplies and  to those affected by this disaster. Every contribution, <br class="hidden lg:block">big or small, makes  difference. Please join us in supporting the relief <br class="hidden lg:block"> efforts and making a positive impact on the lives of those in need.
+          </p>
+          <input id='input-amount-3'class=" w-[300px] sm:w-[400px] border border-gray-300 p-2 my-5" type="text" placeholder="Write Donation Amount ">
+          <br>
+          <button id="donate3-btn" class="btn mt-5 w-[300px] sm:w-[400px] text-xl hover:bg-[#B4F461]">Donation</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+    <div id="history-div" class=" hidden mt-5 ">
+      <div id="inpur-history">
+
+      </div>
+    </div>
+  
+  
+    <footer id="footer">
+      <div class="bg-[#F9F7F3] h-40 mt-6 ">
+  
+      </div>
+    </footer>
+
+ 
+
+  
+  
+  
+    
+  <script src="utilities.js"></script>
+  <script src="donate.js"></script>
+  <script src="history.js"></script>
 </body>
 </html>
+
+
+
+
+
