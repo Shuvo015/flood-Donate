@@ -57,6 +57,28 @@
           <input id="input-amount-1" class=" w-[300px] sm:w-[400px] border border-gray-300 p-2 my-5" type="text" placeholder="Write Donation Amount ">
           <br>
           <button id="donate1-btn" class="btn mt-5 w-[300px] sm:w-[400px] text-xl hover:bg-[#B4F461]">Donation</button>
+
+          <!-- MODAL -->
+          <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box  text-center">
+              <h3 class="text-4xl font-bold text-orange-400">Congrates!</h3>
+              <p class="py-4 text-2xl">You Have Donated For Human Kind</p>
+              <h3 class="text-3xl font-bold text-green-700">Successfuly!</h3>
+              <div class="">
+                <form >
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button  id="ok-btn" class="btn w-24 mt-5 bg-[#B4F461]">OK</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+
+          <!-- MODAL END-->
+
+
+
+
         </div>
       </div>
     </div>

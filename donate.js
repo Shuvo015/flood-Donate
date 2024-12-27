@@ -1,5 +1,20 @@
-document.getElementById('donate1-btn').addEventListener('click', function(){
-  // const noakhali = document.getElementById('noakhali')
+const modal = document.getElementById('my_modal_1');
+
+document.getElementById('ok-btn').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent form submission or default behavior
+  modal.close();
+  
+});
+// const modal = document.getElementById('donation-modal');
+// const modalMessage = document.getElementById('donation-modal-message');
+// const closeModalBtn = document.getElementById('close-modal-btn');
+
+// closeModalBtn.addEventListener('click', ()=> {
+//   modal.close();
+// });
+
+document.getElementById('donate1-btn').addEventListener('click', function(event){
+  event.preventDefault()
   const inputAmount1 = parseFloat(document.getElementById('input-amount-1').value)
   const span1Input = parseFloat(document.getElementById('span1-input').innerText)
   const accountBalance = parseFloat(document.getElementById('balance').innerText) 
@@ -17,6 +32,8 @@ document.getElementById('donate1-btn').addEventListener('click', function(){
              <P class='text-3xl'> <span class='text-green-500'>${inputAmount1}</span> for Donate for Flood at Noakhali, Bangladesh </p>
     `
     document.getElementById('history-div').appendChild(div);
+    // modalMessage.innerText = `You have successfully donated ${inputAmount1} BDT for the flood relief in Noakhali!`;
+    modal.showModal();
     
   }
   else{
@@ -45,6 +62,7 @@ document.getElementById('donate2-btn').addEventListener('click', function(){
              <P class='text-3xl'> <span class='text-green-500'>${inputAmount1}</span> for Taka is Donated for Flood Relief in Feni,Bangladesh </p>
     `
     document.getElementById('history-div').appendChild(div);
+    modal.showModal();
     
   }
   else{
@@ -73,6 +91,7 @@ document.getElementById('donate3-btn').addEventListener('click', function(){
              <P class='text-3xl'> <span class='text-green-500'>${inputAmount1}</span> for Aid for Injured in the Quota Movement</p>
     `
     document.getElementById('history-div').appendChild(div);
+    modal.showModal();
     
   }
   else{
